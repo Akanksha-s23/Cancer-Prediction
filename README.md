@@ -6,11 +6,11 @@
 # Dataset
   Source: YBI Foundation Cancer Dataset
   Contains numerical features such as:
-  Radius
-  Texture
-  Perimeter
-  Area
-  Smoothness
+ 1 Radius
+ 2 Texture
+ 3 Perimeter
+ 4 Area
+ 5 Smoothness
   # Target variable:
     M (Malignant) → 1
     B (Benign) → 0
