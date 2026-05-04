@@ -1,0 +1,70 @@
+Accuracy: 0.9736842105263158
+
+Confusion Matrix:
+ [[70  1]
+ [ 2 41]]
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98        71
+           1       0.98      0.95      0.96        43
+
+    accuracy                           0.97       114
+   macro avg       0.97      0.97      0.97       114
+weighted avg       0.97      0.97      0.97       114
+
+
+## 📊 Results and Performance Analysis
+
+The model was evaluated on a test dataset and achieved strong performance across all key metrics.
+
+### 🔹 Overall Accuracy
+
+* The model achieved an accuracy of **97.36%**, indicating that it correctly classified the majority of tumor cases.
+
+---
+
+### 🔹 Confusion Matrix
+
+```
+[[70  1]
+ [ 2 41]]
+```
+
+* **70** benign cases were correctly identified
+* **41** malignant cases were correctly identified
+* **1** false positive: predicted cancer when it was benign
+* **2** false negatives: missed cancer cases
+
+---
+
+### 🔹 Classification Metrics
+
+| Class         | Precision | Recall | F1-Score |
+| ------------- | --------- | ------ | -------- |
+| Benign (0)    | 0.97      | 0.99   | 0.98     |
+| Malignant (1) | 0.98      | 0.95   | 0.96     |
+
+---
+
+### 🧠 Interpretation
+
+* The model demonstrates **high precision (0.98)** for malignant predictions, meaning most predicted cancer cases are correct.
+* The **recall for malignant cases is 0.95**, indicating that the model successfully detects the majority of actual cancer cases.
+* Only **2 out of 43 cancer cases were missed**, showing strong detection capability.
+* The high F1-scores reflect a good balance between precision and recall.
+
+---
+
+### ⚠️ Key Insight
+
+While overall accuracy is high, minimizing **false negatives (missed cancer cases)** is critical in medical applications. The current model performs well but could be further improved to reduce missed detections.
+
+---
+
+### 📌 Summary
+
+The model provides a reliable and accurate classification of tumors, achieving a strong balance between sensitivity (recall) and precision, making it effective for predictive analysis tasks.
+
+---
